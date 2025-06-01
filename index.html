@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghareeb Fathy | Developer & Designer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghareeb Fathy | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1e1e2f, #2d2d44);
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
     }
-    header {
+
+    .hero {
       text-align: center;
-      padding: 4rem 1rem;
-      background: url('https://www.transparenttextures.com/patterns/cubes.png');
+      padding: 100px 20px;
     }
-    header h1 {
+
+    .hero h1 {
       font-size: 3rem;
       font-weight: bold;
     }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
     .section-title {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-top: 60px;
+      margin-bottom: 30px;
       font-size: 2rem;
-      border-bottom: 2px solid #8ac926;
-      display: inline-block;
+      font-weight: bold;
+      color: #fff;
     }
-    .icon-grid img {
-      margin: 1rem;
-      transition: transform 0.3s ease;
+
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      padding: 20px;
+      color: #fff;
+      transition: 0.3s ease;
+      height: 100%;
     }
-    .icon-grid img:hover {
-      transform: scale(1.2);
+
+    .project-card:hover {
+      background-color: #333;
+      transform: translateY(-5px);
     }
-    .card {
-      background-color: #2e2e3e;
-      border: none;
+
+    .icon-bar img {
+      margin: 10px;
     }
-    .btn-custom {
-      background-color: #8ac926;
-      border: none;
-      color: #000;
-    }
+
     footer {
       text-align: center;
-      padding: 2rem;
-      background-color: #1e1e2f;
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #111;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Ghareeb Fathy</h1>
-    <p>Programmer & Digital Designer | Python, C++, JS</p>
+  <div class="hero">
+    <h1>Hi, I'm Ghareeb Fathy</h1>
+    <p>Programmer (Python / C++) & Digital Designer 🎨</p>
     <div>
-      <a href="https://github.com/ghareebfathy" target="_blank" class="text-light me-3"><i class="fab fa-github fa-2x"></i></a>
-      <a href="https://www.behance.net/ghareebfatf2f8" target="_blank" class="text-light"><i class="fab fa-behance fa-2x"></i></a>
+      <a href="https://github.com/ghareebfathy" class="btn btn-outline-light m-2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.behance.net/ghareebfatf2f8" class="btn btn-outline-light m-2" target="_blank"><i class="fab fa-behance"></i> Behance</a>
     </div>
-  </header>
+  </div>
 
-  <section class="container py-5">
-    <h2 class="section-title">About Me</h2>
-    <p class="text-center">I'm a self-taught programmer and designer who loves combining code with creativity. My main strengths lie in Python, C++, and web technologies. I also enjoy creating digital art and UI designs.</p>
-  </section>
-
-  <section class="container py-5">
-    <h2 class="section-title">Projects</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card p-3">
-          <h5>Download YouTube</h5>
-          <p>CLI tool for downloading YouTube videos using Python.</p>
-          <a href="https://github.com/ghareebfathy/download-YouTube" class="btn btn-custom btn-sm" target="_blank">View Project</a>
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>🔗 YouTube Downloader</h5>
+          <p>Python script for downloading videos using pytube. Clean and modular CLI.</p>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-3">
-          <h5>ProjectEuler Solutions</h5>
-          <p>Collection of mathematical problem solutions in Python.</p>
-          <a href="https://github.com/ghareebfathy/ProjectEuler" class="btn btn-custom btn-sm" target="_blank">View Project</a>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>🧮 Project Euler</h5>
+          <p>My C++ & Python solutions for classic math/programming challenges.</p>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-3">
-          <h5>PySchool</h5>
-          <p>Educational scripts and examples for learning Python.</p>
-          <a href="https://github.com/ghareebfathy/PySchool" class="btn btn-custom btn-sm" target="_blank">View Project</a>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>📚 PySchool</h5>
+          <p>Educational Python examples and programs for students and beginners.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>🗃️ Move Files Tool</h5>
+          <p>Organizes files by type in selected directories. Automates cleanup.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>⭐ Pattern Programs</h5>
+          <p>Collection of star/number pattern printing scripts in C++ and Python.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="container py-5 text-center">
     <h2 class="section-title">Skills</h2>
-    <div class="icon-grid">
-      <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" width="55" title="Python" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="55" title="C++" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" title="JavaScript" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" title="CSS3" />
-      <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" width="55" title="Bootstrap" />
-      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="55" title="Git" />
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="55" title="Design Tools" />
+    <div class="text-center icon-bar">
+      <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" width="50">
+      <img src="https://www.vectorlogo.zone/logos/cplusplus/cplusplus-icon.svg" alt="C++" width="50">
+      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="50">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Design" width="50" title="Design Tools">
+      <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS" width="50" title="CSS">
+      <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="Bootstrap" width="50" title="Bootstrap">
+      <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" width="50" title="JavaScript">
     </div>
-  </section>
-
-  <section class="container py-5">
-    <h2 class="section-title">Contact</h2>
-    <p class="text-center">Want to collaborate or get in touch?</p>
-    <div class="text-center">
-      <a href="mailto:your-email@example.com" class="btn btn-custom">Email Me</a>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Ghareeb Fathy. All rights reserved.</p>
+    <p>🧑‍💻 Built with ❤️ by Ghareeb Fathy</p>
   </footer>
-
 </body>
-</html>
 
+</html>
