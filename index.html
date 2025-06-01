@@ -23,6 +23,7 @@
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
+      text-shadow: 2px 2px #000;
     }
 
     .hero p {
@@ -37,24 +38,32 @@
       font-size: 2rem;
       font-weight: bold;
       color: #fff;
+      text-shadow: 1px 1px #000;
     }
 
     .project-card {
-      background-color: #1c1c1c;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
       border-radius: 15px;
       padding: 20px;
       color: #fff;
       transition: 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       height: 100%;
     }
 
     .project-card:hover {
-      background-color: #333;
+      background: rgba(255, 255, 255, 0.1);
       transform: translateY(-5px);
     }
 
     .icon-bar img {
       margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-bar img:hover {
+      transform: scale(1.1);
     }
 
     footer {
@@ -73,6 +82,7 @@
     <div>
       <a href="https://github.com/ghareebfathy" class="btn btn-outline-light m-2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       <a href="https://www.behance.net/ghareebfatf2f8" class="btn btn-outline-light m-2" target="_blank"><i class="fab fa-behance"></i> Behance</a>
+      <a href="behance.html" class="btn btn-light m-2" target="_blank">🎨 My Designs</a>
     </div>
   </div>
 
